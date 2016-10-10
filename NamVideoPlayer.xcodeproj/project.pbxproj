@@ -13,6 +13,8 @@
 		939A3CDE1DABA06800B579D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939A3CDC1DABA06800B579D5 /* Main.storyboard */; };
 		939A3CE01DABA06800B579D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 939A3CDF1DABA06800B579D5 /* Assets.xcassets */; };
 		939A3CE31DABA06800B579D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 939A3CE11DABA06800B579D5 /* LaunchScreen.storyboard */; };
+		939A3CEB1DABA14B00B579D5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 939A3CEA1DABA14B00B579D5 /* AVFoundation.framework */; };
+		939A3CEE1DABA78100B579D5 /* namVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 939A3CED1DABA78100B579D5 /* namVideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		939A3CDF1DABA06800B579D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		939A3CE21DABA06800B579D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		939A3CE41DABA06800B579D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		939A3CEA1DABA14B00B579D5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		939A3CED1DABA78100B579D5 /* namVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = namVideo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939A3CEB1DABA14B00B579D5 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 		939A3CC71DABA06800B579D5 = {
 			isa = PBXGroup;
 			children = (
+				939A3CEA1DABA14B00B579D5 /* AVFoundation.framework */,
 				939A3CD21DABA06800B579D5 /* NamVideoPlayer */,
 				939A3CD11DABA06800B579D5 /* Products */,
 			);
@@ -58,6 +64,7 @@
 		939A3CD21DABA06800B579D5 /* NamVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				939A3CED1DABA78100B579D5 /* namVideo.mp4 */,
 				939A3CD61DABA06800B579D5 /* AppDelegate.h */,
 				939A3CD71DABA06800B579D5 /* AppDelegate.m */,
 				939A3CD91DABA06800B579D5 /* ViewController.h */,
@@ -139,6 +146,7 @@
 				939A3CE31DABA06800B579D5 /* LaunchScreen.storyboard in Resources */,
 				939A3CE01DABA06800B579D5 /* Assets.xcassets in Resources */,
 				939A3CDE1DABA06800B579D5 /* Main.storyboard in Resources */,
+				939A3CEE1DABA78100B579D5 /* namVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +310,7 @@
 				939A3CE91DABA06800B579D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
