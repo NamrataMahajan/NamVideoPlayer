@@ -17,13 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSURL *fileURl=[[NSBundle mainBundle]URLForResource:@"namVideo" withExtension:@"mp4"];
+    fileURl=[[NSBundle mainBundle]URLForResource:@"namVideo" withExtension:@"mp4"];
     NSLog(@"%@",fileURl);
     player=[[AVPlayer alloc]initWithURL:fileURl];
-    AVPlayerLayer *moivePlayerLayer =[AVPlayerLayer playerLayerWithPlayer:player];
-    [moivePlayerLayer setFrame:CGRectMake(100, 100, 300, 170)];
-    [self.view.layer addSublayer:moivePlayerLayer];
-    [player play];
+    moivePlayerLayer =[AVPlayerLayer playerLayerWithPlayer:player];
+
     
     
 }
@@ -33,4 +31,39 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)ActionPlayPause:(id)sender {
+    
+    UIButton *button=sender;
+    if (button.tag==100) {
+        button.tag=101;
+        [player play];
+        
+        [moivePlayerLayer setFrame:CGRectMake(100, 100, 300, 170)];
+        [self.view.layer addSublayer:moivePlayerLayer];
+        //[player play];
+
+        
+       // [self.view addSubview:button];
+    }
+    else if(button.tag==101){
+        
+        button.tag=100;
+        [player pause];
+    }
+    
+}
+
+- (IBAction)ActionStopButton:(id)sender {
+    [player pause];
+    
+  
+
+    
+    player=[[AVPlayer alloc]initWithURL:fileURl];
+    moivePlayerLayer =[AVPlayerLayer playerLayerWithPlayer:player];
+    
+
+    
+    
+}
 @end

@@ -12,7 +12,11 @@
 
 @interface ViewController : UIViewController{
     AVPlayer *player;
+    AVPlayerLayer *moivePlayerLayer;
+    NSURL *fileURl;
 }
+- (IBAction)ActionPlayPause:(id)sender;
+- (IBAction)ActionStopButton:(id)sender;
 
 
 @end
